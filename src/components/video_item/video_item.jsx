@@ -11,8 +11,7 @@ const VideoItem = ({video: {snippet}}) => (
             <p className={styles.channel}>{snippet.channelTitle}</p>
           </div>
          </div>
-      </li>
-      
+      </li>      
   );
 
 export default VideoItem;
