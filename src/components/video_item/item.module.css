@@ -1,36 +1,39 @@
-.container{
-  width: 50%;
+.container {
+  width: 49%;
   padding: 0.2em;
 }
 
 .video {
+  width: 95%;
+  height: 98%;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
   border: 1px solid lightgray;
-  cursor: pointer; 
-  box-shadow: 11px 7px 15px 0px #130B72;
-  transition: transform 200ms ease-in;
-}
-.video:hover{
-  transform: scale(1.05);
+  box-shadow: 3px 3px 5px 0px rgba(87, 84, 84, 0.7);
+  cursor: pointer;
+  transition: transform 250ms ease-in;
 }
 
-.thumbnail{
-  width: 40%;
+.video:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 48%;
   height: 100%;
 }
 
-.metadata{
-  margin-left: 0.2em;
-}
-.title,
-.channel{
-  margin: 0;
-  font-size: 0.8rem;
+.metadata {
+  margin-left: 0.1em;
 }
 
-.channel{
-  font-size: 0.6rem;
+.title,
+.channel {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.channel {
+  font-size: 0.7rem;
+  font-weight: bold;
 }

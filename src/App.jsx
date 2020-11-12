@@ -6,23 +6,19 @@ import VideoList from './components/video_list/video_list';
 function App({youtube}) {
   const [videos, setVideos] = useState([]);   
   const search =(query) =>{
-    youtube
-    .search(query)
-    .then(videos => setVideos(videos));   
+    youtube.search(query).then(videos => setVideos(videos));   
   }
-
   useEffect(() => {
     youtube
-    .mostPopluar()
-    .then(videos => setVideos(videos));
-    },[]);    
-    
+      .mostPopular() //
+      .then(videos => setVideos(videos));
+  },[])    
     return (
     <div className={styles.app}>
       <SearchHeader onSearch={search}/>
       <VideoList videos={videos} />
     </div>
-    )
+    );
 }
 
 export default App;
